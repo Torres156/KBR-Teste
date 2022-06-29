@@ -1,0 +1,31 @@
+﻿@model string
+@{
+}
+
+<a class="btn btn-dark" asp-action="index">Voltar</a>
+<div class="card mt-2">
+    <div class="card-body">
+        <h3>Cadastro</h3>
+
+        <form class="form-row mt-2 col-4" method="post" asp-action="registernew">
+            <label>Email:</label>
+            <input class="form-control" name="email" type="email" required/>
+            <label>Senha:</label>
+            <input class="form-control" name="pwd" type="password" required />
+            <label>CPF: *Apenas números, sem pontos e traços</label>
+            <input class="form-control" name="cpf" type="text" required />
+            <div class="mt-2">
+                <button class="btn btn-dark" type="submit" >Registrar</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+@if (!string.IsNullOrEmpty(Model))
+{
+    <div class="card mt-3">
+        <div class="card-body">
+            <strong>@Model</strong>            
+        </div>
+    </div>
+}

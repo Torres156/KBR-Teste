@@ -1,0 +1,65 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Teste Backend - KBR</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/KBR.styles.css" asp-append-version="true" />
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+</head>
+<body>
+    <script>
+        function getCookie(cname) {
+            let name = cname + "=";
+            let decodedCookie = decodeURIComponent(document.cookie);
+            let ca = decodedCookie.split(';');
+            for (let i = 0; i < ca.length; i++) {
+                let c = ca[i];
+                while (c.charAt(0) == ' ') {
+                    c = c.substring(1);
+                }
+                if (c.indexOf(name) == 0) {
+                    return c.substring(name.length, c.length);
+                }
+            }
+            return "";
+        }
+    </script>
+
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+
+<footer class="footer pt-4 pb-4">
+    <div class="container">
+        <p class="m-0 text-white text-center">© Copyright | KBRTEC | Todos os direitos reservados</p>
+    </div>
+</footer>
+
+<script>
+
+    $("[data-mask='money']").maskMoney({ allowNegative: false, thousands: '.', decimal: ',' });
+
+    $(document).ready(function() {
+        $("[name='prazo-mes']").change(function() {
+            $(".limite-valor").removeClass('d-none');
+            $(".prazo-meses .prazos").addClass('active');
+            $('.prazos .box-select .content .icon').show();
+            $('.prazos .box-select .content .total').hide();
+            $(this).siblings('.content').find('.icon').hide();
+            $(this).siblings('.content').find('.total').show();
+        });
+    })
+</script>
+</html>

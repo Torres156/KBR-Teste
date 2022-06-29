@@ -1,0 +1,75 @@
+﻿@{
+}
+
+<div class="box">
+    <div class="box-dados">
+        <a href="/loan/" title="Voltar" class="btn btn-dark">Voltar</a>
+    </div>
+
+    <div class="card">
+        <div class="card-body">
+            <h2 class="title">Composição do custo efetivo</h2>
+            <p>Taxa de Juros: 1,2% ao mês</p>
+            <p>Taxa de Administração: 2,5% na concessão + 0,1% ao mês sobre o saldo devedor!</p>
+            <p>IOF: 0,38% na concessão + 0,0082% ao dia sobre o saldo devedor (limitado a 365 dias)</p>
+        </div>
+    </div>
+
+    <div class="card mt-2">
+        <div class="card-body">
+            <table class="table table-sm table-bordered">
+                <thead>
+                    <tr>
+                        <th scope="col">Prazo</th>
+                        <th scope="col">6</th>
+                        <th scope="col">12</th>
+                        <th scope="col">24</th>
+                        <th scope="col">36</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">Parcela</th>
+                        <td>17,9%</td>
+                        <td>9,4%</td>
+                        <td>5,2%</td>
+                        <td>3,7%</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <div class="card mt-2">
+        <form asp-action="simulation"  method="post">
+            <div class="card-body">
+                <h2>Simule já!</h2>
+
+                <label>Valor pretendido: <span style="color:red">*Valor Mínimo de R$ 5000,00</span></label>
+                <input name="value" type="number" class="form-control money" placeholder="Valor R$" min="5000.00" step="any"  value="5000.00" />
+
+                <label>Quantia de parcelas:</label>
+                <select name="parc" class="form-select">
+                    <option value="6">6 meses</option>
+                    <option value="12">12 meses</option>
+                    <option value="24">24 meses</option>
+                    <option value="36">36 meses</option>
+                </select>
+
+            </div>
+
+            <div class="card-footer">
+                <h4>Você tem interesse em continuar com a simulação?</h4>
+                <button class="btn bg-warning" type="submit">Sim, tenho interesse!</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+<script>
+    let token = getCookie("session-token");
+    if (token.length == 0) {
+        window.location.href = "/home/";
+    }
+
+</script>

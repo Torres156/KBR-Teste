@@ -1,0 +1,44 @@
+﻿@model LoanModel
+@{
+}
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-10 col-lg-7 col-xl-6">
+            <div class="box">
+                <h1 class="title">Dados</h1>
+                <div class="box-dados">
+                    <p><strong>Simulações: </strong>@Model.CountSimulates</p>
+                    <p><strong>Valor Total: </strong>@Model.TotalValueSimulate.ToString("C2")</p>
+
+                    <a href="/" title="Ir para página inicial" class="btn btn-dark">Sair</a>
+                    <a href="/loan/simulate/" class="btn btn-danger">
+                        Nova simulação!
+                    </a>
+                </div>
+            </div>
+
+        </div>
+
+        @if (Model.HaveAccess)
+        {
+            <div class="card mt-2">
+                <div class="card-body">
+                    <h3>Relatório Geral</h3>
+                    <form asp-action="exportcsv" method="get">
+                        <button class="btn btn-danger" type="submit" >CSV</button>
+                    </form>
+                    
+                </div>
+
+            </div>
+        }
+    </div>
+</div>
+
+<script>
+    let token = getCookie("session-token");
+    if (token.length == 0) {
+        window.location.href = "/home/";
+    }
+</script>

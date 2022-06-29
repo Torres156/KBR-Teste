@@ -1,0 +1,992 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap');
+
+.btn {
+    color: #fff;
+    line-height: 1;
+    font-size: 14px;
+    font-family: 'Rubik', sans-serif;
+    text-transform: uppercase;
+    padding: 7px 20px;
+    margin: 6px;
+    border-radius: 15px;
+}
+
+.footer {
+    background: #0974CB;
+    color: #fff;
+}
+
+.page#emprestimo {
+    padding: 3rem 0;
+    min-height: 65vh;
+    background: linear-gradient(180deg, #0974CB 0% 40%, #FFF 40% 100%);
+}
+
+    .page#emprestimo .container {
+        height: 100%;
+    }
+
+        .page#emprestimo .container > .row {
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+        }
+
+    .page#emprestimo .box {
+        margin: 0 auto;
+        padding: 4rem;
+        background: #fff;
+        box-shadow: 0px 38px 56px -20px rgba(201, 201, 201, 0.25);
+        border-radius: 17px;
+    }
+
+        .page#emprestimo .box .title {
+            margin-bottom: 3rem;
+            font-family: 'Rubik';
+            font-weight: 600;
+            font-size: 1.875rem;
+            color: #4A4D49;
+        }
+
+        .page#emprestimo .box .box-dados {
+            margin-top: -1.5rem;
+        }
+
+            .page#emprestimo .box .box-dados p {
+                font-family: 'Rubik';
+                font-size: 1.15rem;
+                color: #4A4D49;
+            }
+
+            .page#emprestimo .box .box-dados .btn {
+                margin-top: 1.5rem;
+            }
+
+        .page#emprestimo .box .form-label {
+            font-family: 'Rubik';
+            font-weight: 500;
+            font-size: 15px;
+            color: #4A4D49;
+        }
+
+        .page#emprestimo .box .form-control {
+            min-height: 50px;
+            background: #fff;
+            border: 2px solid #E5E5E5;
+            border-radius: 8px;
+            font-family: 'Rubik';
+            font-size: 15px;
+            color: #4A4D49;
+        }
+
+            .page#emprestimo .box .form-control:focus {
+                box-shadow: none;
+                border-color: #0974CB;
+            }
+
+        .page#emprestimo .box .form-row {
+            margin-bottom: 1rem;
+            align-items: center;
+        }
+
+        .page#emprestimo .box .form-btn {
+            margin-bottom: 0;
+        }
+
+        .page#emprestimo .box .form-info {
+            margin-top: 0.5rem;
+            font-family: 'Rubik';
+            font-size: 12px;
+            color: #4A4D49;
+        }
+
+        .page#emprestimo .box .form-placeholder {
+            position: relative;
+        }
+
+            .page#emprestimo .box .form-placeholder .form-label {
+                position: absolute;
+                top: -11px;
+                left: 30px;
+                background: #fff;
+            }
+
+        .page#emprestimo .box .btn-green {
+            margin-top: 1.5rem;
+            padding: 1rem 3rem;
+            background: linear-gradient(0deg, #3FAE1B 0%, #3FAE1B 100%);
+            border: 1px solid #3FAE1B;
+            border-radius: 100px;
+            transition: ease-in-out .25s;
+        }
+
+    .page#emprestimo .title-page {
+        font-family: 'Rubik';
+        font-size: 1.5625rem;
+        font-weight: 600;
+        line-height: 1.5;
+        color: #4A4D49;
+    }
+
+    .page#emprestimo .text-page {
+        font-family: 'Rubik';
+        font-size: 0.9375rem;
+        line-height: 1.5;
+        color: #4A4D49;
+    }
+
+    .page#emprestimo .box .box-title {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 2.5rem;
+    }
+
+        .page#emprestimo .box .box-title .title {
+            margin-bottom: 0;
+        }
+
+        .page#emprestimo .box .box-title .btn-green {
+            margin: 0 0 0 .75rem;
+            padding: 1rem 2.5rem;
+        }
+
+        .page#emprestimo .box .box-title .numbers {
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            flex: 0 0 50%;
+            max-width: 50%;
+        }
+
+    .page#emprestimo .box .numbers::before {
+        content: '';
+        position: absolute;
+        top: 40%;
+        left: 50.5%;
+        z-index: 1;
+        display: block;
+        width: 15px;
+        height: 15px;
+        background: #FBA601;
+        border-radius: 2px;
+        transform: rotate(-135deg) translateY(-50%);
+    }
+
+    .page#emprestimo .box .box-number {
+        padding: 1.5rem;
+        align-self: stretch;
+        flex: 0 0 50%;
+        max-width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        border-radius: 12px;
+    }
+
+        .page#emprestimo .box .box-number .number {
+            font-family: 'Rubik';
+            font-size: 1.875rem;
+            line-height: 1;
+        }
+
+        .page#emprestimo .box .box-number .desc {
+            font-family: 'Rubik';
+            font-weight: 500;
+            font-size: 0.9375rem;
+            line-height: 1;
+            color: #4A4D49;
+        }
+
+        .page#emprestimo .box .box-number.orange {
+            background: #FBA601;
+            padding: 1.5rem .75rem;
+        }
+
+            .page#emprestimo .box .box-number.orange input {
+                background: #FBA601;
+                border: none;
+            }
+
+                .page#emprestimo .box .box-number.orange input:focus {
+                    border: none;
+                    box-shadow: none;
+                    outline: none;
+                }
+
+            .page#emprestimo .box .box-number.orange .number {
+                font-weight: 600;
+                font-size: 1.75rem;
+                color: #fff;
+                text-align: center;
+            }
+
+        .page#emprestimo .box .box-number.orange-border {
+            border: 2px solid #FBA601;
+            background: #fff;
+            margin-left: 1rem;
+            position: relative;
+            z-index: 2;
+        }
+
+            .page#emprestimo .box .box-number.orange-border .number {
+                font-weight: 500;
+                color: #4A4D49;
+            }
+
+    .page#emprestimo .custo-efetivo {
+        margin: 2rem auto 0;
+        width: 85%;
+    }
+
+        .page#emprestimo .custo-efetivo table td {
+            padding: .25rem .5rem;
+            font-family: 'Rubik';
+            font-weight: 500;
+            font-size: 0.9375rem;
+            color: #4A4D49;
+        }
+
+            .page#emprestimo .custo-efetivo table td .orange {
+                color: #FBA601;
+            }
+
+        .page#emprestimo .custo-efetivo table tr td:first-child {
+            text-align: right;
+        }
+
+    .page#emprestimo .condicoes {
+        margin-top: 2rem;
+        padding-top: 2rem;
+        border-top: 1px solid rgba(196, 196, 196, 0.3);
+        text-align: center;
+    }
+
+        .page#emprestimo .condicoes .text-page {
+            width: 65%;
+            margin: 0 auto;
+        }
+
+    .page#emprestimo .prazo-meses {
+        margin-top: 2rem;
+        padding: 1.5rem 2.5rem;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+        .page#emprestimo .prazo-meses .box-title {
+            flex: 0 0 100%;
+            max-width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+            .page#emprestimo .prazo-meses .box-title .title {
+                margin-bottom: 1.25rem;
+                font-size: 1.15rem;
+                text-align: center;
+            }
+
+        .page#emprestimo .prazo-meses .title-page {
+            display: flex;
+            align-items: center;
+            margin-top: 1.5rem;
+            margin-bottom: 1.875rem;
+        }
+
+            .page#emprestimo .prazo-meses .title-page img {
+                margin-right: 0.5rem;
+            }
+
+        .page#emprestimo .prazo-meses .box-text .item {
+            font-family: 'Rubik';
+            font-weight: 500;
+            font-size: 0.9375rem;
+            line-height: 1.35;
+            color: #4A4D49;
+        }
+
+        .page#emprestimo .prazo-meses .box-text .item-mb {
+            margin: 1.5rem 0 1.75rem;
+        }
+
+        .page#emprestimo .prazo-meses .prazos {
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+            .page#emprestimo .prazo-meses .prazos::after {
+                content: '';
+                position: absolute;
+                top: 87px;
+                right: 0;
+                z-index: 1;
+                display: none;
+                width: 110%;
+                height: 30px;
+                background: #0974CB;
+                border-radius: 5px;
+            }
+
+            .page#emprestimo .prazo-meses .prazos.active::after {
+                display: block;
+            }
+
+        .page#emprestimo .prazo-meses .box-select input {
+            display: none;
+        }
+
+            .page#emprestimo .prazo-meses .box-select input:checked ~ .content {
+                border-color: #0974CB;
+            }
+
+        .page#emprestimo .prazo-meses .box-select + .box-select {
+            margin-left: 1rem;
+        }
+
+        .page#emprestimo .prazo-meses .box-select .content {
+            padding: 1.5rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background: #F8F8F8;
+            border: 1px solid #F8F8F8;
+            border-radius: 18px;
+            cursor: pointer;
+        }
+
+            .page#emprestimo .prazo-meses .box-select .content .mes {
+                margin-bottom: 1rem;
+                display: flex;
+                align-items: center;
+                font-family: 'Rubik';
+                font-weight: 500;
+                font-size: 0.875rem;
+                color: #4A4D49;
+            }
+
+                .page#emprestimo .prazo-meses .box-select .content .mes .num {
+                    font-weight: 600;
+                    font-size: 1.5625rem;
+                    margin-right: 0.15rem;
+                }
+
+            .page#emprestimo .prazo-meses .box-select .content .number {
+                margin-top: 1rem;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                font-family: 'Rubik';
+                font-weight: 500;
+                font-size: 0.9375rem;
+                line-height: 1.15;
+                text-align: center;
+                color: #4A4D49;
+            }
+
+                .page#emprestimo .prazo-meses .box-select .content .number .desc {
+                    display: none;
+                }
+
+                .page#emprestimo .prazo-meses .box-select .content .number.white {
+                    position: relative;
+                    z-index: 2;
+                    color: #fff;
+                }
+
+                .page#emprestimo .prazo-meses .box-select .content .number.orange {
+                    padding: 0.5rem;
+                    display: block;
+                    width: 100%;
+                    background: #FBA601;
+                    border-radius: 5px;
+                    color: #fff;
+                }
+
+            .page#emprestimo .prazo-meses .box-select .content .icon {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .page#emprestimo .prazo-meses .box-select .content .limite-valor .icon {
+                margin-bottom: 0.35rem;
+            }
+
+            .page#emprestimo .prazo-meses .box-select .content .icon img {
+                margin-right: 0.25rem;
+            }
+
+            .page#emprestimo .prazo-meses .box-select .content .icon span {
+                margin-top: 0.25rem;
+            }
+
+            .page#emprestimo .prazo-meses .box-select .content .total {
+                display: none;
+            }
+
+    .page#emprestimo .prazo-estendido {
+        margin-top: 2rem;
+        padding: 1.5rem 2.5rem;
+        background: #F8F8F8;
+        border-radius: 18px;
+    }
+
+        .page#emprestimo .prazo-estendido .box-desc {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+            .page#emprestimo .prazo-estendido .box-desc .title-page {
+                display: flex;
+                align-items: center;
+                margin-bottom: 0;
+            }
+
+                .page#emprestimo .prazo-estendido .box-desc .title-page img {
+                    margin-right: 0.5rem;
+                }
+
+            .page#emprestimo .prazo-estendido .box-desc .mes {
+                display: flex;
+                align-items: center;
+                font-family: 'Rubik';
+                font-weight: 500;
+                font-size: 1.5625rem;
+                color: #4A4D49;
+            }
+
+                .page#emprestimo .prazo-estendido .box-desc .mes .num {
+                    font-weight: 600;
+                    font-size: 3.625rem;
+                    margin-right: 0.25rem;
+                }
+
+            .page#emprestimo .prazo-estendido .box-desc .valor {
+                display: flex;
+                align-items: center;
+                justify-content: flex-end;
+                flex: 0 0 40%;
+                max-width: 40%;
+            }
+
+                .page#emprestimo .prazo-estendido .box-desc .valor .number {
+                    font-family: 'Rubik';
+                    font-weight: 500;
+                    font-size: 0.9375rem;
+                }
+
+                .page#emprestimo .prazo-estendido .box-desc .valor .box-calc {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 25%;
+                }
+
+                    .page#emprestimo .prazo-estendido .box-desc .valor .box-calc .number {
+                        line-height: 1.15;
+                        color: #4A4D49;
+                        text-align: center;
+                    }
+
+                .page#emprestimo .prazo-estendido .box-desc .valor .box-num {
+                    flex: 1;
+                    padding: 0.5em;
+                    border-radius: 5px;
+                    text-align: center;
+                }
+
+                    .page#emprestimo .prazo-estendido .box-desc .valor .box-num.green {
+                        background: #0974CB;
+                    }
+
+                    .page#emprestimo .prazo-estendido .box-desc .valor .box-num.orange {
+                        background: #FBA601;
+                    }
+
+                    .page#emprestimo .prazo-estendido .box-desc .valor .box-num .number {
+                        color: #fff;
+                    }
+
+        .page#emprestimo .prazo-estendido .box-interesse {
+            position: relative;
+            margin-top: 2rem;
+            padding: 2rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background: #FFFFFF;
+            border: 1px solid #DEDEDE;
+            border-radius: 18px;
+        }
+
+            .page#emprestimo .prazo-estendido .box-interesse .icon {
+                position: absolute;
+                top: -20px;
+                left: 50%;
+                transform: translateX(-50%);
+                z-index: 2;
+            }
+
+            .page#emprestimo .prazo-estendido .box-interesse .title-page {
+                margin-bottom: 0;
+            }
+
+            .page#emprestimo .prazo-estendido .box-interesse label {
+                font-family: 'Rubik';
+                font-size: 1rem;
+                color: #4A4D49;
+            }
+
+        .page#emprestimo .prazo-estendido .custom-radio .custom-control-label::before {
+            border: 1px solid #C4C4C4;
+            border-radius: 2px;
+            box-shadow: none;
+        }
+
+        .page#emprestimo .prazo-estendido .custom-control-input:checked ~ .custom-control-label::before {
+            background: #fff;
+            border-color: #C4C4C4;
+        }
+
+        .page#emprestimo .prazo-estendido .custom-control-label::after {
+            top: 0.5rem;
+            left: -1.25rem;
+            width: 0.5rem;
+            height: 0.5rem;
+        }
+
+        .page#emprestimo .prazo-estendido .custom-radio .custom-control-input:checked ~ .custom-control-label::after {
+            background: #0974CB;
+            box-shadow: 0px 4px 4px rgba(167, 194, 107, 0.56);
+            border-radius: 1px;
+        }
+
+@media(max-width: 1199px) {
+    .page#emprestimo .title-page {
+        font-size: 1.25rem;
+        line-height: 1.15;
+    }
+
+    .page#emprestimo .box .box-title {
+        padding: 0 1.5rem;
+    }
+
+        .page#emprestimo .box .box-title .title {
+            font-size: 1.65rem;
+        }
+
+        .page#emprestimo .box .box-title .btn-green {
+            margin: 0 0 0 0.5rem;
+            padding: 1rem 2rem;
+        }
+
+    .page#emprestimo .box .numbers::before {
+        top: 34.5%;
+    }
+
+    .page#emprestimo .box .box-number {
+        padding: 1rem;
+    }
+
+        .page#emprestimo .box .box-number .number {
+            font-size: 1.65rem;
+        }
+
+        .page#emprestimo .box .box-number .desc {
+            font-size: 0.75rem;
+        }
+
+        .page#emprestimo .box .box-number.orange {
+            padding: 1rem .5rem;
+        }
+
+            .page#emprestimo .box .box-number.orange .number {
+                font-size: 1.5rem;
+            }
+
+    .page#emprestimo .prazo-meses,
+    .page#emprestimo .prazo-estendido {
+        padding: 1.5rem;
+    }
+
+        .page#emprestimo .prazo-meses .title-page img,
+        .page#emprestimo .prazo-estendido .title-page img {
+            width: 20px;
+        }
+
+        .page#emprestimo .prazo-meses .box-text .item {
+            font-size: 0.875rem;
+            line-height: 1.25;
+        }
+
+        .page#emprestimo .prazo-meses .box-text .item-mb {
+            margin: 1.5rem 0 1.75rem;
+        }
+
+        .page#emprestimo .prazo-meses .prazos::after {
+            top: 70px;
+            width: 103.5%;
+        }
+
+        .page#emprestimo .prazo-meses .box-select + .box-select {
+            margin-left: .5rem;
+        }
+
+        .page#emprestimo .prazo-meses .box-select .content {
+            padding: 1.25rem;
+        }
+
+            .page#emprestimo .prazo-meses .box-select .content .mes {
+                margin-bottom: .5rem;
+                font-size: 0.75rem;
+            }
+
+                .page#emprestimo .prazo-meses .box-select .content .mes .num {
+                    font-size: 1.375rem;
+                }
+
+            .page#emprestimo .prazo-meses .box-select .content .number {
+                margin-top: 1rem;
+                font-size: 0.875rem;
+            }
+
+        .page#emprestimo .prazo-estendido .box-desc .mes {
+            font-size: 1.25rem;
+        }
+
+            .page#emprestimo .prazo-estendido .box-desc .mes .num {
+                font-size: 2.5rem;
+            }
+
+        .page#emprestimo .prazo-estendido .box-desc .valor {
+            flex: 0 0 50%;
+            max-width: 50%;
+        }
+
+            .page#emprestimo .prazo-estendido .box-desc .valor .number {
+                font-size: 0.875rem;
+            }
+
+        .page#emprestimo .prazo-estendido .box-interesse {
+            padding: 2rem 1.5rem;
+        }
+
+            .page#emprestimo .prazo-estendido .box-interesse .icon {
+                width: 30px;
+                top: -14px;
+            }
+
+            .page#emprestimo .prazo-estendido .box-interesse label {
+                font-size: 0.875rem;
+            }
+
+    .page#emprestimo .custo-efetivo {
+        width: 100%;
+    }
+
+    .page#emprestimo .condicoes .text-page {
+        width: 80%;
+    }
+}
+
+@media(max-width: 991px) {
+    .page#emprestimo .text-page {
+        font-size: 0.875rem;
+    }
+
+    .page#emprestimo .box .box-title {
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 0 1rem;
+    }
+
+        .page#emprestimo .box .box-title .title {
+            text-align: center;
+        }
+
+        .page#emprestimo .box .box-title .btn-green {
+            margin: 1rem 0 0 0.5rem;
+        }
+
+        .page#emprestimo .box .box-title .numbers {
+            margin-top: 1rem;
+            flex: 0 0 74%;
+            max-width: 74%;
+            justify-content: center;
+        }
+
+    .page#emprestimo .box .numbers::before {
+        left: 52%;
+    }
+
+    .page#emprestimo .box .box-number {
+        flex: 0 0 45%;
+        max-width: 45%;
+    }
+
+    .page#emprestimo .prazo-meses {
+        padding: 1rem;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+        .page#emprestimo .prazo-meses .title-page {
+            margin: 0 0 1.5rem;
+        }
+
+        .page#emprestimo .prazo-meses .box-text .item {
+            display: none;
+        }
+
+        .page#emprestimo .prazo-meses .prazos {
+            flex-wrap: wrap;
+        }
+
+            .page#emprestimo .prazo-meses .prazos::after {
+                content: none;
+            }
+
+        .page#emprestimo .prazo-meses .box-select {
+            margin: .25rem 0.5rem;
+            flex: 0 0 calc(50% - 1rem);
+            max-width: calc(50% - 1rem);
+        }
+
+            .page#emprestimo .prazo-meses .box-select + .box-select {
+                margin-left: 0.5rem;
+            }
+
+            .page#emprestimo .prazo-meses .box-select .content .mes {
+                margin-bottom: 0;
+                font-size: 0.875rem;
+            }
+
+                .page#emprestimo .prazo-meses .box-select .content .mes .num {
+                    font-size: 1.5rem;
+                }
+
+            .page#emprestimo .prazo-meses .box-select .content .number .desc {
+                margin-bottom: 0.25rem;
+                display: block;
+                font-size: .75rem;
+                font-weight: 400;
+            }
+
+            .page#emprestimo .prazo-meses .box-select .content .number.white {
+                padding: 0.5rem;
+                width: 100%;
+                background: #0974CB;
+                border-radius: 5px;
+            }
+
+    .page#emprestimo .prazo-estendido {
+        padding: 1.5rem 1rem;
+    }
+
+        .page#emprestimo .prazo-estendido .box-desc {
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+            .page#emprestimo .prazo-estendido .box-desc .title-page {
+                margin-bottom: .75rem;
+                width: 100%;
+                justify-content: center;
+            }
+
+            .page#emprestimo .prazo-estendido .box-desc .mes {
+                margin-bottom: 0.25rem;
+                width: 100%;
+                justify-content: center;
+            }
+
+            .page#emprestimo .prazo-estendido .box-desc .valor {
+                flex: 0 0 70%;
+                max-width: 70%;
+            }
+
+        .page#emprestimo .prazo-estendido .box-interesse {
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+            .page#emprestimo .prazo-estendido .box-interesse .title-page {
+                margin-bottom: 0.75rem;
+                width: 100%;
+                text-align: center;
+            }
+
+    .page#emprestimo .custo-efetivo .title-page {
+        text-align: center;
+    }
+
+    .page#emprestimo .custo-efetivo table td {
+        font-size: 0.875rem;
+    }
+
+    .page#emprestimo .condicoes .text-page {
+        width: 100%;
+    }
+}
+
+@media(max-width: 767px) {
+    .page#emprestimo .box {
+        padding: 2.5rem;
+    }
+
+        .page#emprestimo .box .title {
+            margin-bottom: 2.5rem;
+            font-size: 1.65rem;
+        }
+
+        .page#emprestimo .box .form-label,
+        .page#emprestimo .box .form-control {
+            font-size: 14px;
+        }
+
+        .page#emprestimo .box .form-placeholder .form-label {
+            top: -8px;
+            left: 20px;
+        }
+
+        .page#emprestimo .box .box-title .title {
+            font-size: 1.35rem;
+        }
+
+        .page#emprestimo .box .box-title .btn-green {
+            margin: 1rem 0 0 0;
+            width: 100%;
+        }
+
+        .page#emprestimo .box .box-title .numbers {
+            flex-wrap: wrap;
+            flex: 0 0 100%;
+            max-width: 100%;
+        }
+
+        .page#emprestimo .box .numbers::before {
+            content: none;
+        }
+
+        .page#emprestimo .box .box-number {
+            flex: 0 0 100%;
+            max-width: 100%;
+        }
+
+            .page#emprestimo .box .box-number.orange-border {
+                margin-left: 0;
+                margin-top: 0.5rem;
+                text-align: center;
+            }
+
+            .page#emprestimo .box .box-number.orange .number,
+            .page#emprestimo .box .box-number .number {
+                font-size: 1.25rem;
+            }
+
+    .page#emprestimo .prazo-meses {
+        padding: 0;
+    }
+
+        .page#emprestimo .prazo-meses .title-page {
+            margin: 0 0 0.75rem;
+        }
+
+        .page#emprestimo .prazo-meses .box-select {
+            flex: 0 0 calc(100% - 1rem);
+            max-width: calc(100% - 1rem);
+        }
+
+    .page#emprestimo .prazo-estendido .box-desc .mes {
+        font-size: 1.15rem;
+    }
+
+        .page#emprestimo .prazo-estendido .box-desc .mes .num {
+            font-size: 2.25rem;
+        }
+
+    .page#emprestimo .prazo-estendido .box-desc .valor {
+        flex: 0 0 100%;
+        max-width: 100%;
+        flex-wrap: wrap;
+    }
+
+        .page#emprestimo .prazo-estendido .box-desc .valor .box-num {
+            flex: 0 0 100%;
+            max-width: 100%;
+        }
+
+        .page#emprestimo .prazo-estendido .box-desc .valor .box-calc {
+            width: 100%;
+            margin: 1rem 0;
+        }
+
+    .page#emprestimo .prazo-estendido .box-interesse .custom-control {
+        margin-top: 0.5rem;
+        margin-right: 0;
+    }
+
+    .page#emprestimo .custo-efetivo table tr td:first-child {
+        vertical-align: top;
+    }
+}
+
+@media(max-width: 424px) {
+    .page#emprestimo .box {
+        padding: 2rem;
+    }
+
+        .page#emprestimo .box .title {
+            margin-bottom: 2rem;
+            font-size: 1.45rem;
+            text-align: center;
+        }
+
+        .page#emprestimo .box .btn-green {
+            margin-top: 1rem;
+        }
+
+        .page#emprestimo .box .numbers {
+            flex-wrap: wrap;
+        }
+
+            .page#emprestimo .box .numbers::before {
+                content: none;
+            }
+
+        .page#emprestimo .box .box-number {
+            flex: 0 0 100%;
+            max-width: 100%;
+        }
+
+            .page#emprestimo .box .box-number.orange-border {
+                margin-left: 0;
+                margin-top: 0.5rem;
+                text-align: center;
+            }
+}
+
+@media(max-width: 374px) {
+    .page#emprestimo .box {
+        padding: 2rem 1.5rem;
+    }
+
+        .page#emprestimo .box .form-label,
+        .page#emprestimo .box .form-control {
+            font-size: 12.5px;
+        }
+
+        .page#emprestimo .box .form-info {
+            font-size: 11px;
+        }
+}

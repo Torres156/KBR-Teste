@@ -1,0 +1,31 @@
+﻿@model string
+@{
+}
+
+<a class="btn btn-danger" asp-action="index">Voltar</a>
+<form class="form-row mt-2" asp-action="forgotpassword" method="post">
+    <h1>Esqueci meus dados</h1>
+    <label>Digite seu cpf:</label>
+    <div class="col-2 mt-2">
+        <input name="cpf" class="form-control " type="text" required />
+        <button class="btn btn-dark">Enviar</button>
+    </div>
+</form>
+
+@if (!string.IsNullOrEmpty(Model))
+{
+    <div class="card mt-3">
+        <div class="card-body">
+            @if (Model.StartsWith("[/]"))
+            {
+               <p>
+                   O email associado a esse CPF é <strong>@Model.Substring(3)</strong>
+               </p>
+            }
+            else
+            {
+                @Model
+            }
+        </div>
+    </div>
+}

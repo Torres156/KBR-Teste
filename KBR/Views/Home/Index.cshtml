@@ -1,0 +1,75 @@
+﻿@{
+
+}
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-10 col-lg-7 col-xl-6">
+            <div class="box">
+                <h1 class="title">Informe seus dados</h1>
+
+                <form class="form" asp-action="Check" method="post">
+                    <div class="form-row">
+                        <div class="col-12 form-placeholder">
+                            <label for="email" class="form-label">Digite o seu e-mail do trabalho:</label>
+                            <input type="email" name="email" id="email" class="form-control" required>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="">
+                            <label for="cpf-1" class="form-label">Digite os 4 primeiros dígitos do seu CPF:</label>
+                        </div>
+                        <div class="row">
+                            <div class="col-2">
+                                <input name="cpf" id="cpf-1" type="text" class="form-control" required>
+                            </div>
+                            <div class="col-2">
+                                <input name="cpf" id="cpf-2" type="text" class="form-control" required>
+                            </div>
+                            <div class="col-2">
+                                <input name="cpf" id="cpf-3" type="text" class="form-control" required>
+                            </div>
+                            <div class="col-2">
+                                <input name="cpf" id="cpf-4" type="text" class="form-control" required>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="form-row form-btn">
+                        <div class="col-12">
+                            <button type="submit" class="btn btn-dark">Continuar</button>
+                            <a class="btn btn-info" asp-action="forgot">Esqueci meus dados</a>
+                        </div>
+                    </div>
+                </form>
+                
+                <div class="row">
+
+                    @if (!string.IsNullOrEmpty(Variables["login-msg"].ToString()))
+                    {
+                        @Variables["login-msg"]
+                    }
+
+                </div>
+            </div>
+        </div>
+
+        <div class="card mt-3">
+            <div class="card-body">
+                <p>Ainda não possui cadastro?</p>
+                <a class="btn btn-dark" asp-action="register">Cadastre já!</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script defer>
+    let session_id = getCookie("session-token");
+console.log(session-token);
+    if (session_id != "") {
+        window.location.href = "/Loan/";
+    }
+</script>
+

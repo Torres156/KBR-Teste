@@ -1,0 +1,26 @@
+﻿@{
+}
+
+<div class="card">
+    <div class="card-body">
+        *DEMO - Código aleatório de teste: <b></b>
+    </div>
+</div>
+
+<form class="mt-2" asp-action="CheckCode" method="post">
+    <label>Digite o código de acesso:</label>
+    <input name="code" type="text" maxlength="6" pattern="[0-9]+" required />
+
+    <div class="col-12 mt-2">
+        <button type="submit" class="btn btn-dark">Continuar</button>
+    </div>
+</form>
+
+<script>
+    let code = getCookie("authentical-code");
+    $('.card-body b').html(code);
+console.log(code);
+
+if (code == "")
+    window.location.href = "/home/";
+</script>
