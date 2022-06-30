@@ -5,10 +5,10 @@ namespace KBR.Services
     public static class DataService
     {
         const string DatabaseName = "kbrteste";
-        const string IP           = "localhost";
+        const string IP           = "kbrsql.mysql.database.azure.com";
         const int    PORT         = 3306;
-        const string User         = "root";
-        const string Password     = "156156";
+        const string User         = "kbradmin@kbrsql";
+        const string Password     = "@Kbrteste";
 
         public static MySqlConnection? Connection { get; private set; }
 
